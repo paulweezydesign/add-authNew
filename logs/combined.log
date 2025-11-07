@@ -1,0 +1,33 @@
+2025-07-05T18:13:38.508Z [31merror[39m: Error getting database client connect ECONNREFUSED 127.0.0.1:5432 {
+  "service": "add-auth",
+  "errno": -111,
+  "code": "ECONNREFUSED",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 5432,
+  "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at /home/weezyone/apps/add-auth/node_modules/pg-pool/index.js:45:11\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async DatabaseConnection.getClient (/home/weezyone/apps/add-auth/src/database/connection.ts:50:22)\n    at async DatabaseConnection.query (/home/weezyone/apps/add-auth/src/database/connection.ts:59:20)\n    at async MigrationManager.getAppliedMigrations (/home/weezyone/apps/add-auth/src/database/migrate.ts:29:22)\n    at async MigrationManager.getStatus (/home/weezyone/apps/add-auth/src/database/migrate.ts:164:33)\n    at async main (/home/weezyone/apps/add-auth/src/database/migrate.ts:201:9)"
+}
+2025-07-05T18:13:38.514Z [32minfo[39m: Schema migrations table does not exist, assuming no migrations applied {
+  "service": "add-auth"
+}
+2025-07-05T18:13:38.516Z [32minfo[39m: Database connection pool closed {
+  "service": "add-auth"
+}
+2025-07-05T18:17:58.286Z [32minfo[39m: Starting database migrations... {
+  "service": "add-auth"
+}
+2025-07-06T19:30:02.259Z [31merror[39m: Error getting database client connect ECONNREFUSED 127.0.0.1:5432 {
+  "service": "add-auth",
+  "errno": -111,
+  "code": "ECONNREFUSED",
+  "syscall": "connect",
+  "address": "127.0.0.1",
+  "port": 5432,
+  "stack": "Error: connect ECONNREFUSED 127.0.0.1:5432\n    at /home/weezyone/apps/add-auth/node_modules/pg-pool/index.js:45:11\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async DatabaseConnection.getClient (/home/weezyone/apps/add-auth/src/database/connection.ts:50:22)\n    at async DatabaseConnection.query (/home/weezyone/apps/add-auth/src/database/connection.ts:59:20)\n    at async MigrationManager.getAppliedMigrations (/home/weezyone/apps/add-auth/src/database/migrate.ts:29:22)\n    at async MigrationManager.getStatus (/home/weezyone/apps/add-auth/src/database/migrate.ts:164:33)\n    at async main (/home/weezyone/apps/add-auth/src/database/migrate.ts:201:9)"
+}
+2025-07-06T19:30:02.263Z [32minfo[39m: Schema migrations table does not exist, assuming no migrations applied {
+  "service": "add-auth"
+}
+2025-07-06T19:30:02.267Z [32minfo[39m: Database connection pool closed {
+  "service": "add-auth"
+}
